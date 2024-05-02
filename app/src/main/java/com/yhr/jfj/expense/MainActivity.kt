@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
 private fun HomeScreen() {
     Scaffold(
         bottomBar = {
-            TODO("Create bottom bar")
+            BottomNavigationBar()
         }
     ) { innerPadding ->
         Column(
