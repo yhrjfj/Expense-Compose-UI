@@ -109,14 +109,13 @@ fun CurrenciesSection(modifier: Modifier = Modifier) {
                 )
             }
             HorizontalDivider(
-                thickness = 1.dp,
-                color = MaterialTheme.colorScheme.secondaryContainer
+                color = MaterialTheme.colorScheme.onSecondaryContainer.copy(alpha = 0.4f)
             )
             if (isVisible) {
                 BoxWithConstraints(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(horizontal = 16.dp)
+                        .padding(start = 16.dp, top = 8.dp, end = 16.dp)
                         .clip(RoundedCornerShape(topStart = 25.dp, topEnd = 25.dp))
                         .background(MaterialTheme.colorScheme.background)
                 ) {
@@ -126,7 +125,7 @@ fun CurrenciesSection(modifier: Modifier = Modifier) {
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(16.dp)
+                            .padding(horizontal = 16.dp)
                     ) {
                         Spacer(modifier = Modifier.height(16.dp))
                         Row(
