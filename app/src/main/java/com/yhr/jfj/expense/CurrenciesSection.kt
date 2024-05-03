@@ -215,14 +215,15 @@ val currenciesList = listOf(
 )
 
 @Composable
-fun CurrencyItem(index: Int, width: Dp, modifier: Modifier = Modifier) {
+fun CurrencyItem(index: Int, width: Dp) {
     val currency = currenciesList[index]
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(bottom = 16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
+        // Name column
         Row(
             modifier = Modifier.width(width),
             verticalAlignment = Alignment.CenterVertically
@@ -234,40 +235,40 @@ fun CurrencyItem(index: Int, width: Dp, modifier: Modifier = Modifier) {
                     .padding(4.dp)
             ) {
                 Icon(
+                    modifier = Modifier.size(18.dp),
                     imageVector = currency.icon,
                     contentDescription = currency.name,
-                    modifier = Modifier.size(18.dp),
                     tint = Color.White
                 )
             }
+            Text(
+                modifier = Modifier
+                    .padding(start = 10.dp),
+                text = currency.name,
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp,
+                color = MaterialTheme.colorScheme.onBackground,
+            )
         }
-        // Currency Name
+        // Buy column
         Text(
             modifier = Modifier
                 .width(width)
                 .padding(start = 10.dp),
-            text = currency.name,
-            fontSize = 18.sp,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-        // Buy amount
-        Text(
-            modifier = Modifier
-                .width(width),
             text = "$ ${currency.buy}",
-            fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
+            fontSize = 16.sp,
             color = MaterialTheme.colorScheme.onBackground,
             textAlign = TextAlign.End
         )
-        // Currency sell
+        // Sell column
         Text(
             modifier = Modifier
-                .width(width),
+                .width(width)
+                .padding(start = 10.dp),
             text = "$ ${currency.sell}",
-            fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
+            fontSize = 16.sp,
             color = MaterialTheme.colorScheme.onBackground,
             textAlign = TextAlign.End
         )
