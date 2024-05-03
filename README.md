@@ -1,2 +1,2 @@
-![Screenshot_20240503_113743](https://github.com/yhrjfj/Expense-Compose-UI/assets/102893295/0eddbb9e-780b-40e5-8c15-5248b8f07c04)
-![Screenshot_20240503_113757](https://github.com/yhrjfj/Expense-Compose-UI/assets/102893295/720ad74d-7f0f-4cab-817b-e5ff948a0779)
+![Screenshot_20240503_165205](https://github.com/yhrjfj/Expense-Compose-UI/assets/102893295/26c1e099-bf8e-4bfe-9326-87708e3b38f0)
+![Screenshot_20240503_165216](https://github.com/yhrjfj/Expense-Compose-UI/assets/102893295/e673a10d-2233-412c-a775-322c0c23f0e8)
